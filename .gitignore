@@ -1,0 +1,17 @@
+﻿# Build files
+build/
+cmake-build-*/
+*.exe
+*.o
+*.obj
+
+# Generated solver data
+*.dat
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
