@@ -8,9 +8,10 @@ cmake-build-*/
 # Generated solver data
 *.dat
 
-# IDE
+# IDE / local tooling
 .vscode/
 .idea/
+.claude/
 
 # OS
 .DS_Store
