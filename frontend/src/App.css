@@ -1,5 +1,5 @@
 .app {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
 }
@@ -55,6 +55,9 @@ h1 {
   padding-top: 20px;
 }
 
+/* =========================================================
+   Old 2D cube styles
+   ========================================================= */
 
 .cube-net {
   display: flex;
@@ -110,6 +113,10 @@ h1 {
   background: blue;
 }
 
+/* =========================================================
+   Move controls
+   ========================================================= */
+
 .move-controls {
   display: flex;
   flex-wrap: wrap;
@@ -133,4 +140,97 @@ h1 {
 
 .move-controls button:hover {
   background: #e9e9e9;
+}
+
+/* =========================================================
+   3D cube
+   ========================================================= */
+
+.cube3d-container {
+  width: 100%;
+  height: 500px;
+}
+
+.cube3d-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* =========================================================
+   Two-cube layout
+   ========================================================= */
+
+.cubes-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.cube-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  width: 100%;
+}
+
+.cube-panel h2,
+.cube-panel h3 {
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+/* =========================================================
+   Playback controls
+   ========================================================= */
+
+.playback-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.move-progress {
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+/* =========================================================
+   Responsive layout
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .app {
+    max-width: 700px;
+  }
+
+  .cubes-row {
+    grid-template-columns: 1fr;
+  }
+
+  .cube3d-container {
+    height: 450px;
+  }
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 24px 12px;
+  }
+
+  .scramble-input-row {
+    flex-direction: column;
+  }
+
+  .scramble-input-row button {
+    width: 100%;
+  }
+
+  .cube3d-container {
+    height: 400px;
+  }
 }
