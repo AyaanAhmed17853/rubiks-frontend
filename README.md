@@ -31,7 +31,7 @@ cmake --build build --config Release
 Or directly with g++:
 
 ```sh
-g++ -O2 -std=c++17 src/*.cpp -o rubiks_solver
+g++ -std=c++17 src/main.cpp src/cube.cpp src/pieces.cpp src/pdb.cpp src/solver.cpp -o rubiks_solver.exe
 ```
 
 ## Running
