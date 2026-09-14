@@ -56,9 +56,6 @@ Python and checks (via 200 random scrambles):
 - the cubie-level composition formula used to build `cpMove`/`coMove`
   (and hence the PDB) matches direct decoding of the scrambled cube.
 
-Python isn't available in this environment either, so this hasn't been run
-— run it with `python3 tests/validate.py` once Python is available to
-sanity-check the logic before relying on it.
 
 ## Scope / limitations
 
