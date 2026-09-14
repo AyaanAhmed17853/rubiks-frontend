@@ -69,5 +69,3 @@ Python and checks (via 200 random scrambles):
   to speed up harder scrambles.
 
 
-g++ *.cpp -O2 -std=c++17 -o rubiks_solver
-rubiks_solver.exe --scramble "F R U R' U' F'"
